@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+   --accent: #ff2a2a;  
 }
 
 @theme inline {
@@ -23,4 +24,45 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.outline-box {
+  box-shadow: 0 0 0 1px var(--line) inset;
+  border-radius: 1.4rem;
+}
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.pill {
+  border-radius: 1rem;
+}
+
+.nav-link {
+  position: relative;
+}
+.nav-link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--fg);
+  transition: width 0.2s;
+}
+.nav-link:hover:after {
+  width: 100%;
+}
+
+.tag {
+  background: #121319;
+  border: 1px solid #25262c;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.5rem;
+  color: #c3c8d4;
+  font-size: 0.75rem;
 }
