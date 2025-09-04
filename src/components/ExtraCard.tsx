@@ -1,12 +1,26 @@
+type MaybeUrl = boolean | string | undefined;
+
 export default function ExtraCard({
   title,
   subtitle,
   img,
+  certificate,  // boolean | string (URL)
+  link,         // boolean | string (URL)
 }: {
   title: string;
   subtitle: string;
   img: string;
+  certificate?: MaybeUrl;
+  link?: MaybeUrl;
 }) {
+  const isUrl = (v: MaybeUrl): v is string => typeof v === "string" && v.length > 0;
+
+  const showLink = link === true || isUrl(link);
+  const linkHref  = isUrl(link) ? link : "#";
+
+  const showCert = certificate === true || isUrl(certificate);
+  const certHref = isUrl(certificate) ? certificate : "#";
+
   return (
     <article
       className="
@@ -23,25 +37,36 @@ export default function ExtraCard({
         </h3>
         <p className="text-xs text-[var(--muted)] truncate">{subtitle}</p>
 
-        <div className="mt-2 flex flex-wrap gap-2">
-          <a
-            className="px-2.5 py-1 rounded-[0.9rem] text-[11px] sm:text-xs font-semibold bg-[#1a1b22] border border-white/10"
-            href="#"
-          >
-            LINK
-          </a>
-          <a
-            className="px-2.5 py-1 rounded-[0.9rem] text-[11px] sm:text-xs font-semibold bg-[#1a1b22] border border-white/10"
-            href="#"
-          >
-            CERTIFICATE
-          </a>
-        </div>
+        {(showLink || showCert) && (
+          <div className="mt-2 flex flex-wrap gap-2">
+            {showLink && (
+              <a
+                className="px-2.5 py-1 rounded-[0.9rem] text-[11px] sm:text-xs font-semibold bg-[#1a1b22] border border-white/10"
+                href={linkHref}
+                target={isUrl(link) ? "_blank" : undefined}
+                rel={isUrl(link) ? "noopener noreferrer" : undefined}
+              >
+                LINK
+              </a>
+            )}
+            {showCert && (
+              <a
+                className="px-2.5 py-1 rounded-[0.9rem] text-[11px] sm:text-xs font-semibold bg-[#1a1b22] border border-white/10"
+                href={certHref}
+                target={isUrl(certificate) ? "_blank" : undefined}
+                rel={isUrl(certificate) ? "noopener noreferrer" : undefined}
+              >
+                CERTIFICATE
+              </a>
+            )}
+          </div>
+        )}
       </div>
 
       {/* RIGHT: small logo pinned at the end */}
       <div className="ml-auto shrink-0">
-        <div className="h-18 w-18 sm:h-14 sm:w-14 md:h-20 md:w-20 rounded-lg overflow-hidden border border-white/10 bg-white/5">
+        {/* Tailwind doesn't have h-18/w-18; use arbitrary values */}
+        <div className="h-[72px] w-[72px] sm:h-14 sm:w-14 md:h-20 md:w-20 rounded-lg overflow-hidden border border-white/10 bg-white/5">
           <img src={img} alt={title} className="h-full w-full object-contain" />
         </div>
       </div>

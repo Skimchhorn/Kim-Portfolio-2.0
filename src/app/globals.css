@@ -66,3 +66,25 @@ body {
   color: #c3c8d4;
   font-size: 0.75rem;
 }
+/* Pretty scrollbar only for elements using .nice-scrollbar */
+.nice-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(255,255,255,.24) transparent;
+}
+
+/* Chrome/Safari/Edge */
+.nice-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+.nice-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.nice-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.18);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.nice-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,.28);
+}
