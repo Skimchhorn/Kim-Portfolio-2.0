@@ -454,7 +454,7 @@ function Bubble({ role, text }: { role: "user" | "assistant"; text: string }) {
             : "bg-[#0f1016] border border-white/10 text-white",
         ].join(" ")}
       >
-        {"${text}"}
+        {text}
       </div>
     </div>
   );
