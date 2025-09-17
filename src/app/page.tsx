@@ -267,7 +267,7 @@ export default function PortfolioPage() {
               <div className="grid md:grid-cols-2 gap-8 items-start">
                 <div>
                   <h2 className="text-2xl font-extrabold tracking-wide border-l-4 border-[var(--accent)] pl-3 mb-4">
-                    AI ZONE 🤖
+                    Ask My AI 🤖
                   </h2>
                   <p className="text-[var(--muted)] max-w-prose">
                     Chat with my AI assistant that knows my background, skills, projects, and experience in depth.
