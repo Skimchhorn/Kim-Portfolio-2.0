@@ -331,20 +331,33 @@ export default function ClientChat({
       //   setMessages((m) => [...m, { role: "assistant", content: data.reply }]);
       // }
       // replace the whole streaming block:
+      
       const data = (await res.json()) as { reply: string };
+      console.log(data)
       setMessages((m) => [...m, { role: "assistant", content: data.reply }]);
 
-    } catch (e: any) {
-      if (e?.name === "AbortError") {
+    } catch (e: unknown) {
+      // Detect user-initiated cancel (AbortController)
+      const isAbort =
+        typeof e === "object" &&
+        e !== null &&
+        // DOMException in browsers has name === "AbortError"
+        "name" in e &&
+        (e as { name?: string }).name === "AbortError";
+
+      if (isAbort) {
         // user canceled; ignore
-      } else {
-        console.error(e);
-        setMessages((m) => [
-          ...m,
-          { role: "assistant", content: "Sorry—something went wrong." },
-        ]);
+        return;
       }
-    } finally {
+
+      console.error(e);
+
+      setMessages((m) => [
+        ...m,
+        { role: "assistant", content: "Sorry—something went wrong." },
+      ]);
+    }
+    finally {
       setLoading(false);
     }
   }
@@ -441,7 +454,7 @@ function Bubble({ role, text }: { role: "user" | "assistant"; text: string }) {
             : "bg-[#0f1016] border border-white/10 text-white",
         ].join(" ")}
       >
-        {text}
+        {"${text}"}
       </div>
     </div>
   );

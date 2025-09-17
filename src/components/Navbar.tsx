@@ -16,7 +16,7 @@ export default function Navbar() {
               href="#home"
               className="inline-flex items-center gap-2 font-black tracking-wide text-sm rounded-[1rem] px-3 py-1 border border-white/20"
             >
-              <span className="bg-[var(--accent)] text-black px-2 py-0.5 rounded">KIM'S</span>
+              <span className="bg-[var(--accent)] text-black px-2 py-0.5 rounded">{"Kim’s"}</span>
               <span>PORTFOLIO</span>
             </a>
 
@@ -47,7 +47,7 @@ export default function Navbar() {
               href="#home"
               className="inline-flex items-center gap-2 font-black tracking-wide text-sm rounded-[1rem] px-3 py-1 border border-white/20"
             >
-              <span className="bg-[var(--accent)] text-black px-2 py-0.5 rounded">KIM'S</span>
+              <span className="bg-[var(--accent)] text-black px-2 py-0.5 rounded">{"KIM'S"}</span>
               <span>PORTFOLIO</span>
             </a>
           <ul className="flex items-center gap-8 text-sm font-bold tracking-wide">

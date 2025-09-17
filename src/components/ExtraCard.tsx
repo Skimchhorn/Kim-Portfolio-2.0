@@ -1,5 +1,6 @@
 type MaybeUrl = boolean | string | undefined;
 
+
 export default function ExtraCard({
   title,
   subtitle,
