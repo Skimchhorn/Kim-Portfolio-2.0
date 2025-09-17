@@ -68,7 +68,7 @@ export default function PortfolioPage() {
           <div className="grid sm:grid-cols-[7fr_4fr] gap-6 items-stretch">
             {/* Intro text card */}
             <div className="outline-box p-6 md:p-8 flex flex-col justify-center">
-              <p className="text-sm tracking-widest text-[var(--muted)]">HELLO, I'M</p>
+              <p className="text-sm tracking-widest text-[var(--muted)]">{"HELLO, I'M"}</p>
               <h1 className="mt-2 text-4xl md:text-5xl font-black tracking-tight">
                 KIM CHHORN SAMBATH
               </h1>
@@ -284,7 +284,7 @@ export default function PortfolioPage() {
 
 
         <footer className="py-8 border-t border-white/5 text-xs text-center text-[var(--muted)]">
-          © {new Date().getFullYear()} KIM'S PORTFOLIO
+          © {new Date().getFullYear()} {"KIM'S PORTFOLIO"}
         </footer>
       </main>
     </div>

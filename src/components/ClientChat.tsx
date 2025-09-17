@@ -488,7 +488,7 @@ export function QuickPrompt({ children }: { children: string }) {
     </button>
   );
 }
-(ClientChat as any).QuickPrompt = QuickPrompt;
+ClientChat.QuickPrompt = QuickPrompt;
 
 // keep only last 8 turns (skip starter bubble at index 0)
 function last8(history: Msg[]) {
