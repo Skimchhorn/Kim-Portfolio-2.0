@@ -78,7 +78,7 @@ export default function PortfolioPage() {
                 apply my skills to create innovative solutions.
               </p>
               <div className="mt-5 flex flex-wrap items-center gap-3">
-                <a target = "_blank" href="/fallcoop2025-resume-health.pdf" className="bg-[var(--accent)] text-black font-semibold px-4 py-2 pill">
+                <a target = "_blank" href="/image/resume.pdf" className="bg-[var(--accent)] text-black font-semibold px-4 py-2 pill">
                   VIEW RESUME
                 </a>
                 <a target = "_blank" href="mailto:kcs11@sfu.ca" className="bg-[var(--accent)]/90 hover:bg-[var(--accent)] text-black font-semibold px-4 py-2 pill">
