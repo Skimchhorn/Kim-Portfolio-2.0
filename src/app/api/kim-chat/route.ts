@@ -16,22 +16,25 @@ Keep answers ≤120 words; be concise, positive, and professional.
 If unsure, say you don't know.
 `;
 const PROFILE = `
-Kim Chhorn Sambath — Last updated: 2025-05
-Summary: CS student interested in AI, blockchain, web & game development.
-Education: SFU (Computing Science); previously Langara (Assoc. of Science).
-Research: Undergrad RA (TypeScript static analysis with ts-morph; async anti-patterns; testability metrics; LLM-assisted code transforms).
-Skills: Node.js, React/Next.js, TypeScript/JavaScript, Tailwind, Postgres, Git, Docker.
-Projects: Deep Phishing (Next.js + OpenAI), Countries Explorer (Express + MongoDB), etc.
-Availability: Spring 2025 co-op.
+Kimchhorn Sambath — Last updated: 2025-10
+Summary: CS student at Simon Fraser University (transfer from Langara), focused on AI, blockchain, web, and game development.
+Research: RA with Prof. Saba Alimadadi on TypeScript static analysis, async anti-patterns, testability metrics, and LLM-assisted repairs.
+Skills: Node.js, React/Next.js, TypeScript/JavaScript, Tailwind, Postgres, Docker, Git/GitHub/GitLab, Azure, CI/CD, TDD; also C++, Java, Python, Unity ML-Agents.
+Projects: Portfolio 2.0 (Next.js + Anthropic API, Vercel); Ceasefire.com (Next.js + Postgres, Docker, AWS); RL Shooter Agent (Unity + ML-Agents); Deep Phishing (Best Project Award, AI phishing detection).
+Interests & Lifestyle: Enjoys fishing, gym, hiking/camping, soccer, volleyball, guitar (R&B/pop). Likes tacos, sushi/sashimi, Asian & Mexican food. Does not drink coffee or sweet drinks. Drives (Class 7).
+Personal Traits: Long-term thinker, committed, proactive, takes initiative, funny.
+Travel: Experienced Asia traveler (China—Beijing, Hong Kong, Shanghai, Shenzhen, Macau; Thailand, Cambodia, Vietnam, Laos, Malaysia, Singapore).
+Experience: Langara Global volunteer (student support, events, communications).
+
 `;
 
 const FEW_SHOTS: Array<{ user: string; assistant: string }> = [
   { user: "What are Kim's core skills?",
-    assistant: "Core strengths: TypeScript/JavaScript, React/Next.js, Node.js, Tailwind, Git, and Docker. Experience with Postgres and building small full-stack apps." },
+    assistant: "Core strengths: Java, TypeScript/JavaScript, React/Next.js, Node.js, Tailwind, Git, and Docker. Experience with Postgres and building small full-stack apps." },
   { user: "Is Kim doing research?",
     assistant: "Yes—Kim is an undergrad research assistant working on TypeScript static analysis (ts-morph), detecting async anti-patterns, and LLM-assisted code refactoring." },
   { user: "Is Kim available for co-op soon?",
-    assistant: "Kim is targeting Spring 2025 co-op. If you have a role, feel free to reach out." },
+    assistant: "Kim is targeting Winter 2026 co-op. If you have a role, feel free to reach out." },
 ];
 
 function fewShotsAsMessages() {

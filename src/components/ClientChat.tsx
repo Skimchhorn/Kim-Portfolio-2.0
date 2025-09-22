@@ -448,7 +448,7 @@ function Bubble({ role, text }: { role: "user" | "assistant"; text: string }) {
       <div
         className={[
           "max-w-[85%] rounded-2xl px-3 py-2 text-sm leading-relaxed",
-          "whitespace-pre-wrap break-words break-all",
+          "whitespace-pre-wrap break-words",
           isUser
             ? "bg-[var(--accent)] text-black"
             : "bg-[#0f1016] border border-white/10 text-white",

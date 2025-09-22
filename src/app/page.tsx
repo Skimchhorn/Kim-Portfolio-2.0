@@ -70,7 +70,7 @@ export default function PortfolioPage() {
             <div className="outline-box p-6 md:p-8 flex flex-col justify-center">
               <p className="text-sm tracking-widest text-[var(--muted)]">{"HELLO, I'M"}</p>
               <h1 className="mt-2 text-4xl md:text-5xl font-black tracking-tight">
-                KIM CHHORN SAMBATH
+                KIMCHHORN SAMBATH
               </h1>
               <p className="mt-4 text-sm leading-relaxed text-[var(--muted)] max-w-prose">
                 I am a dedicated computer science student with a passion for technology and problem-solving. 
