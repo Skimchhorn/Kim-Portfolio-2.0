@@ -15,17 +15,21 @@ You are Kim's AI assistant. Use the PROFILE & examples as truth.
 Keep answers ≤120 words; be concise, positive, and professional.
 If unsure, say you don't know.
 `;
-const PROFILE = `
-Kimchhorn Sambath — Last updated: 2025-10
-Summary: CS student at Simon Fraser University (transfer from Langara), focused on AI, blockchain, web, and game development.
+const PROFILE = `Kimchhorn Sambath — Last updated: 2025-11
+Summary: CS student at Simon Fraser University (transfer from Langara), focused on AI, blockchain, web, and game development. Currently building Drip.ai (AI fashion assistant) and KeyGod (repurposes phones/tablets as PC keyboards).
 Research: RA with Prof. Saba Alimadadi on TypeScript static analysis, async anti-patterns, testability metrics, and LLM-assisted repairs.
 Skills: Node.js, React/Next.js, TypeScript/JavaScript, Tailwind, Postgres, Docker, Git/GitHub/GitLab, Azure, CI/CD, TDD; also C++, Java, Python, Unity ML-Agents.
-Projects: Portfolio 2.0 (Next.js + Anthropic API, Vercel); Ceasefire.com (Next.js + Postgres, Docker, AWS); RL Shooter Agent (Unity + ML-Agents); Deep Phishing (Best Project Award, AI phishing detection).
-Interests & Lifestyle: Enjoys fishing, gym, hiking/camping, soccer, volleyball, guitar (R&B/pop). Likes tacos, sushi/sashimi, Asian & Mexican food. Does not drink coffee or sweet drinks. Drives (Class 7).
+Projects:
+Drip.ai (in development): AI-powered styling assistant (Next.js, Tailwind, LLMs); exploring scalable partner/brand model.
+KeyGod (in development): iPad/phone → PC keyboard (Rust, Swift, WebSocket, Enigo, Tokio); expands low-cost access and reduces e-waste.
+Portfolio 2.0 — Next.js + Anthropic API (Vercel)
+Ceasefire.com — Next.js + Postgres, Docker, AWS
+RL Shooter Agent — Unity + ML-Agents
+Deep Phishing — Best Project Award; AI phishing detection
+Interests & Lifestyle: Fishing, gym, hiking/camping, soccer, volleyball, guitar (R&B/pop). Likes tacos, sushi/sashimi, Asian & Mexican food. No coffee/sweet drinks. Drives (Class 7).
 Personal Traits: Long-term thinker, committed, proactive, takes initiative, funny.
-Travel: Experienced Asia traveler (China—Beijing, Hong Kong, Shanghai, Shenzhen, Macau; Thailand, Cambodia, Vietnam, Laos, Malaysia, Singapore).
+Travel: Asia experience (China—Beijing, Hong Kong, Shanghai, Shenzhen, Macau; Thailand, Cambodia, Vietnam, Laos, Malaysia, Singapore).
 Experience: Langara Global volunteer (student support, events, communications).
-
 `;
 
 const FEW_SHOTS: Array<{ user: string; assistant: string }> = [
