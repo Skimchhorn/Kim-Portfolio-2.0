@@ -20,12 +20,13 @@ Summary: CS student at Simon Fraser University (transfer from Langara), focused 
 Research: RA with Prof. Saba Alimadadi on TypeScript static analysis, async anti-patterns, testability metrics, and LLM-assisted repairs.
 Skills: Node.js, React/Next.js, TypeScript/JavaScript, Tailwind, Postgres, Docker, Git/GitHub/GitLab, Azure, CI/CD, TDD; also C++, Java, Python, Unity ML-Agents.
 Projects:
-Drip.ai (in development): AI-powered styling assistant (Next.js, Tailwind, LLMs); exploring scalable partner/brand model.
+Drip.ai (done): AI-powered styling assistant (Next.js, Tailwind, LLMs); exploring scalable partner/brand model.
 KeyGod (in development): iPad/phone → PC keyboard (Rust, Swift, WebSocket, Enigo, Tokio); expands low-cost access and reduces e-waste.
-Portfolio 2.0 — Next.js + Anthropic API (Vercel)
-Ceasefire.com — Next.js + Postgres, Docker, AWS
-RL Shooter Agent — Unity + ML-Agents
-Deep Phishing — Best Project Award; AI phishing detection
+Portfolio 2.0 (done)— Next.js + Anthropic API (Vercel)
+Ceasefire.com (in development) — Next.js + Postgres, Docker, AWS
+RL Shooter Agent (done) — Unity + ML-Agents
+Deep Phishing (done) — Best Project Award; AI phishing detection
+Calculator App (done) — JavaFx Java OOP project
 Interests & Lifestyle: Fishing, gym, hiking/camping, soccer, volleyball, guitar (R&B/pop). Likes tacos, sushi/sashimi, Asian & Mexican food. No coffee/sweet drinks. Drives (Class 7).
 Personal Traits: Long-term thinker, committed, proactive, takes initiative, funny.
 Travel: Asia experience (China—Beijing, Hong Kong, Shanghai, Shenzhen, Macau; Thailand, Cambodia, Vietnam, Laos, Malaysia, Singapore).

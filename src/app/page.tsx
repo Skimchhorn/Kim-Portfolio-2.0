@@ -45,7 +45,7 @@ export default function PortfolioPage() {
     {
       title: "Languages",
       icon: "code", // <Code />
-      items: ["C++", "Java", "JavaScript", "TypeScript", "HTML", "CSS", "React", "Python"],
+      items: ["C++", "Java", "JavaScript", "TypeScript", "Rust", "Haskell" ,"HTML", "CSS", "React", "Python"],
     },
     {
       title: "Methodologies & Practices",
@@ -111,10 +111,16 @@ export default function PortfolioPage() {
               "/image/java.png",
               "/image/cpp.png",
               "/image/nextjs.png",
+              "/image/rust.png",
+               "/image/haskell.png",
               "/image/vscode.png",
-              // "/image/cpp.png",
             ].map((src, i) => (
-              <img key={i} src={src} alt="tech" className="h-12 md:h-14 opacity-90" />
+              <img
+                key={i}
+                src={src}
+                alt="tech"
+                className={`h-12 md:h-14 opacity-90 ${src.includes("rust") ? "rounded-full object-cover" : ""}`}
+              />
             ))}
           </div>
         </section>
@@ -215,6 +221,25 @@ export default function PortfolioPage() {
             tags={["Reinforcement Learning", "Python", "Unity", "ML Agent", "C#"]}
             repoUrl="https://github.com/ribsyo/BadVal"   // only repo button shows
           />
+          <ProjectSlide
+            img="/image/dripai.png"
+            title="Drip.ai"
+            tags={["Gemini", "Next.js", "Tailwind CSS", "Vercel"]}
+            repoUrl="https://github.com/Skimchhorn/drip"
+            demoUrl="https://drip-ai.vercel.app" // only repo button shows
+          />
+          <ProjectSlide
+            img="/image/cearsefire.com.png"
+            title="cearsefire.com"
+            tags={["In Progress", "Next.js", "Postgres", "Docker", "AWS"]}
+            repoUrl="https://github.com/Skimchhorn/ceasefire"   // only repo button shows
+          />
+           <ProjectSlide
+            img="/image/calculator.png"
+            title="Calulator App"
+            tags={["Java", "JavaFX", "OOP"]}
+            repoUrl="https://github.com/Skimchhorn/Calculator"   // only repo button shows
+          />
           </SimpleCarousel>
         </section>
         
@@ -276,7 +301,7 @@ export default function PortfolioPage() {
 
                 <ClientChat
                   endpoint="/api/kim-chat"
-                  starter="Hi! I’m Kim’s AI assistant—ask me anything about Kim."
+                  starter="Hi! I’m Kim’s AI assistant. You can ask me anything about Kim."
                   className="outline-box rounded-2xl p-4 md:p-5"
                 />
               </div>
