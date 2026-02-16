@@ -229,6 +229,12 @@ export default function PortfolioPage() {
             demoUrl="https://drip-ai.vercel.app" // only repo button shows
           />
           <ProjectSlide
+            img="/image/angry_girlfriend.png"
+            title="AI-Powered Interaction Simulator (Angry Girlfriend)"
+            tags={["Godot", "LLM NPC Game"]}
+            repoUrl="https://github.com/TechnoMechno/xhacks2026"   // only repo button shows
+          />
+          <ProjectSlide
             img="/image/cearsefire.com.png"
             title="cearsefire.com"
             tags={["In Progress", "Next.js", "Postgres", "Docker", "AWS"]}
@@ -299,7 +305,7 @@ export default function PortfolioPage() {
               subtitle="Mentor and Volunteer"
               img="/image/langara-Volt.png"
               certificate="/image/volt-Certificate.pdf"          // rename file to remove spaces
-              link= "https://www.instagram.com/lg_volunteer/"                                        // show button with '#'
+              link="https://www.instagram.com/lg_volunteer/"                                        // show button with '#'
             />
           </div>
         </section>
