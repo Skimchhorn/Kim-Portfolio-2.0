@@ -266,7 +266,7 @@ export default function PortfolioPage() {
               title="Langara Global Volunteer"
               subtitle="Team Member and Social Ambassador"
               img="/image/LangaraGlobal.png"
-              certificate="/image/statement-of-achievement.pdf"  // file in /public (avoid spaces)
+              certificate="/image/Statement-of-Achievement.pdf"  // file in /public (avoid spaces)
               link="https://www.instagram.com/lg_volunteer/"
             />
 
@@ -274,7 +274,7 @@ export default function PortfolioPage() {
               title="Langara Volt"
               subtitle="Mentor and Volunteer"
               img="/image/langara-Volt.png"
-              certificate="/image/volt-certificate.pdf"          // rename file to remove spaces
+              certificate="/image/volt-Certificate.pdf"          // rename file to remove spaces
               link= "https://www.instagram.com/lg_volunteer/"                                        // show button with '#'
             />
           </div>
