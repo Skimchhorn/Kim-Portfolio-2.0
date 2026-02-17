@@ -253,9 +253,9 @@ export default function PortfolioPage() {
 
 
         {/* Technical Certificate */}
-        <section id="technical-certificate" className="section">
+        <section id="professional-development" className="section">
           <h2 className="text-2xl font-extrabold tracking-wide border-l-4 border-[var(--accent)] pl-3 mb-6">
-            TECHNICAL CERTIFICATE
+            PROFESSIONAL DEVELOPMENT
           </h2>
 
           <div className="grid auto-rows-fr grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-8">
