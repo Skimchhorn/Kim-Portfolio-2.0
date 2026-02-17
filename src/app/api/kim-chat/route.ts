@@ -22,6 +22,7 @@ Skills: Node.js, React/Next.js, TypeScript/JavaScript, Tailwind, Postgres, Docke
 Projects:
 Drip.ai (done): AI-powered styling assistant (Next.js, Tailwind, LLMs); exploring scalable partner/brand model.
 KeyGod (in development): iPad/phone → PC keyboard (Rust, Swift, WebSocket, Enigo, Tokio); expands low-cost access and reduces e-waste.
+AI NPC Conversation System (done): Godot 4 game where player must calm down an angry girlfriend NPC through natural conversation to reach a score of 100. Features LLM-driven dialogue, dynamic mood/relationship states, sentiment-based mood engine (Trust, Patience, Calm metrics), built-in safety guardrails to prevent toxic responses, short-term + long-term memory, visible mood UI + feedback system, and mood-driven animations. Built in 4-person hackathon team with focus on respectful, safe interactions.
 Portfolio 2.0 (done)— Next.js + Anthropic API (Vercel)
 Ceasefire.com (in development) — Next.js + Postgres, Docker, AWS
 RL Shooter Agent (done) — Unity + ML-Agents

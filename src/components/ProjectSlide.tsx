@@ -6,15 +6,18 @@ export default function ProjectSlide({
   tags,
   repoUrl,   // optional GitHub URL
   demoUrl,   // optional live link
+  devpostUrl, // optional Devpost URL
 }: {
   img: string;
   title: string;
   tags: string[];
   repoUrl?: MaybeUrl;
   demoUrl?: MaybeUrl;
+  devpostUrl?: MaybeUrl;
 }) {
   const hasRepo = !!repoUrl && repoUrl.trim().length > 0;
   const hasDemo = !!demoUrl && demoUrl.trim().length > 0;
+  const hasDevpost = !!devpostUrl && devpostUrl.trim().length > 0;
 
   return (
     <article className="relative">
@@ -51,6 +54,17 @@ export default function ProjectSlide({
               aria-label={`${title} live link`}
             >
               LINK
+            </a>
+          )}
+          {hasDevpost && (
+            <a
+              href={devpostUrl!}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex px-3 py-1.5 text-sm font-semibold rounded-[1rem] bg-white/90 text-black hover:bg-white"
+              aria-label={`${title} Devpost`}
+            >
+              DEVPOST
             </a>
           )}
         </div>

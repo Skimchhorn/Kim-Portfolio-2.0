@@ -226,13 +226,15 @@ export default function PortfolioPage() {
             title="Drip.ai"
             tags={["Gemini", "Next.js", "Tailwind CSS", "Vercel"]}
             repoUrl="https://github.com/Skimchhorn/drip"
-            demoUrl="https://drip-ai.vercel.app" // only repo button shows
+            demoUrl="https://drip-ai.vercel.app"
+            devpostUrl="https://devpost.com/software/drip-ai-ctkq6e"
           />
           <ProjectSlide
             img="/image/angry_girlfriend.png"
             title="AI-Powered Interaction Simulator (Angry Girlfriend)"
             tags={["Godot", "LLM NPC Game"]}
-            repoUrl="https://github.com/TechnoMechno/xhacks2026"   // only repo button shows
+            repoUrl="https://github.com/TechnoMechno/xhacks2026"
+            devpostUrl="https://devpost.com/software/angry-girlfriend"
           />
           <ProjectSlide
             img="/image/cearsefire.com.png"
