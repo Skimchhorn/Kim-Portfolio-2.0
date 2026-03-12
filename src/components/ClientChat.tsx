@@ -306,7 +306,15 @@ export default function ClientChat({
 
       if (!res.ok) {
         const errText = await res.text().catch(() => "Request failed");
-        throw new Error(errText);
+        let serverReply = "";
+        try {
+          const parsed = JSON.parse(errText) as { reply?: string };
+          serverReply = parsed.reply?.trim() ?? "";
+        } catch {
+          // Non-JSON response, fall back to raw text.
+        }
+
+        throw new Error(serverReply || errText || "Request failed");
       }
 
       // Try streaming; if not, fall back to JSON { reply }
@@ -333,7 +341,6 @@ export default function ClientChat({
       // replace the whole streaming block:
       
       const data = (await res.json()) as { reply: string };
-      console.log(data)
       setMessages((m) => [...m, { role: "assistant", content: data.reply }]);
 
     } catch (e: unknown) {
@@ -352,9 +359,14 @@ export default function ClientChat({
 
       console.error(e);
 
+      const friendlyMessage =
+        e instanceof Error && e.message.trim()
+          ? e.message
+          : "Sorry-something went wrong.";
+
       setMessages((m) => [
         ...m,
-        { role: "assistant", content: "Sorry—something went wrong." },
+        { role: "assistant", content: friendlyMessage },
       ]);
     }
     finally {
